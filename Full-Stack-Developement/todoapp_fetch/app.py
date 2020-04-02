@@ -1,6 +1,7 @@
 from flask import Flask,render_template, request, redirect, url_for, jsonify,abort
 from flask_sqlalchemy import SQLAlchemy
 import sys
+from flask_migrate
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:12345678@127.0.0.1:5432/todoapp'
