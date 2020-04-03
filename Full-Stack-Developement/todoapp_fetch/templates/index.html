@@ -9,6 +9,7 @@
         list-style: none;
         padding :0;
         margin: 0;
+        width : 300px;
     
       }
     </style>
@@ -34,13 +35,16 @@
         
             const newCompleted = e.target.checked;
             const todoId = e.target.dataset['id'];
-            fetch('/todos/'+ todoId +'set-completed',
+            fetch('/todos/'+ todoId +'/set-completed',
             {method : 'POST',
-            body: JSON.stringify({comleted : newCompleted
+            body: JSON.stringify({'completed' : newCompleted
             }),
             headers : {
               'Content-Type' : 'application/json'
             }
+            })
+            .then(function(){
+              document.getElementById('error').className = 'hidden';
             })
             .catch(function() {
           document.getElementById('error').className = '';
