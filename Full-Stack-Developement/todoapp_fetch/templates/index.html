@@ -9,9 +9,24 @@
         list-style: none;
         padding :0;
         margin: 0;
-        width : 300px;
+        width : 240px;
     
       }
+      li {
+        clear: both;
+      }
+      li button{
+        border: none;
+        outline: none;
+        color: red;
+        float: right;
+        background-color: transparent;
+        float: right;
+        cursor: pointer;
+        font-size: 18px;
+        
+      }
+  
     </style>
   </head>
   <body>
@@ -22,10 +37,28 @@
     </form>
     <ul id="todos">
       {% for d in data %}
-      <li><input class = check-completed data-id = "{{ d.id }}" type ="checkbox" {% if d.completed %} checked {% endif %}>{{ d.description }}</li>
+      <li><input class = check-completed data-id = "{{ d.id }}" type ="checkbox" 
+      {% if d.completed %} checked {% endif %}>
+      {{ d.description }}
+      <button class = 'delete-button' data-id="{{ d.id }}">&Cross;</button>
+      </li>
       {% endfor %}
+
+
     </ul>
     <script>
+      const deleteBtns = document.querySelectorAll('.delete-button');
+      for(let i =0; i < deleteBtns.length; i++)
+      {
+        const btn = deleteBtns[i];
+        btn.onclick = function(e)
+        {
+          const todoId = e.target.dataset['id'];
+          fetch('/todos/' + todoId, {
+            method : 'DELETE'
+          });
+        }
+      }
       const checkboxes = document.querySelectorAll('.check-completed');
       for (let i = 0; i < checkboxes.length; i++)
         {
@@ -54,6 +87,7 @@
       const descInput = document.getElementById('description');
       document.getElementById('form').onsubmit = function(e) {
         e.preventDefault();
+        
         const desc = descInput.value;
         descInput.value = '';
         fetch('/todos/create', {
