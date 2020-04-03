@@ -45,6 +45,22 @@ def create_todo():
         return jsonify(body)
 
 
+@app.route('/todos/<todo_id>/set-completed', methods = ['POST'])
+# <> allows us to have it in our route thus
+# using in the function; we have to use the
+# uset completed only with a paricular todo_id
+def set_completed_todos(todo_id):
+    try:
+        completed = request.get_json()['completed']
+        todo = Todo.query.get(todo_id)
+        todo.completed = completed
+        db.session.commit()
+    except:
+        db.session.rollback()
+    finally:
+        db.session.close()
+    return redirect(url_for('index'))
+
 @app.route('/')
 def index():
     return render_template('index.html', data = Todo.query.all())
