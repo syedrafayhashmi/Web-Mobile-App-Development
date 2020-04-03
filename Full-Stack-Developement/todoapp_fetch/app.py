@@ -69,6 +69,7 @@ def delete_todo(todo_id):
   finally:
     db.session.close()
   return jsonify({ 'success': True })
+
 @app.route('/')
 def index():
     return render_template('index.html', data = Todo.query.order_by('id').all())
