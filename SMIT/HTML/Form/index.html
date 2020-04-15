@@ -5,13 +5,20 @@
     <title>Form</title>
 </head>
 
-<body>
-    <form action="http:www.example.com/login.php">
-        <p> Username:<input type="text" name="username" size="10" maxlength="12"></p>
-        <p>Password: <input type="password" name="password" size="8" maxlength="16"></p>
+<body  bgcolor = "lightgreen">
+    <fieldset >
+        <legend>Registration Form</legend>
+    <form action="filled.html">
+        <p> <label for="username">Username:</label> 
+            <input  required id = "username"placeholder = "username"  type="text" name="username" size="10" maxlength="12">
+            
+        </p>
+        <p>Email: <input placeholder = "email" type="email" name="email"></p>
+        <p>Password: <input required type="password" placeholder="password" name="password" size="8" maxlength="16"></p>
         <p>Gender:
             Male: <input type="radio" name="gender">
             Female: <input type="radio" name="gender"></p>
+            <p>Date of Birth: <input type="date" name="dob"></p>
         <p> Expertise: <br>
             Python: <input type="checkbox" value="Python" name="languages"> <br>
             HTML: <input type="checkbox" value="HTML" name="languages"><br>
@@ -25,11 +32,17 @@
                 <option value="Germany">Germany</option>
                 <option value="UK">UK</option>
             </select></p>
-        <p>Contact: <input type="number" name="number" size="11" maxlength="13"></p>
-    
-        <textarea name="comments" cols="30" rows="10">Enter your Suggestions...</textarea>
-        <input type="button" value="Submit">
+        <p>Contact No.: <input placeholder="Contact No." required type="number" name="number" size="11" maxlength="13"></p>
+        <p>Website: <input type="url" name="website"></p>
+
+        <p>Upload Your Picture: <input type="file" name="image"></p>
+        <textarea name="comments" placeholder = "Enter your Suggestions..." cols="30" rows="10"></textarea>
+      <!-- <p>Submit your Form: <input type="submit" value="Submit"></p> -->
+      <!-- <p align = "right">Search: <input type="search" name="search"></p> -->
+      <p>Submit your Form: <input type="image" src="submit.png" alt="submit.png" height="35px" width="80px"></p>
+      
     </form>
+</fieldset>
 </body>
 
 </html>
