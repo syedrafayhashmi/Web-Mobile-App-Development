@@ -1,0 +1,31 @@
+1st Milestone
+Open firebase.google.com
+Signin using your gmail
+Add project
+
+2nd MileStone
+Open Nodejs.org
+Download Stable/Recommended version
+Install
+
+3rd Milestone
+Open CMD with using run as administrator
+Check for node version using (node -v)
+Check for npm version using (npm -v)
+Install firebase using (npm install --global firebase-tools)
+firebase --version
+
+4th Milestone
+firebase login
+firebase init
+Use Existing Project
+Make Public Folder
+Replace index.html with your web files
+firebase deploy
+
+CONGRATULATIONS YOU CAN GET LINK FOR YOUR ASSIGNMENT
+
+heroku
+
+
+
