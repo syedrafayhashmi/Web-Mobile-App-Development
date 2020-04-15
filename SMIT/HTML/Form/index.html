@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="http:www.example.com/login.php">
+        <p> Username:<input type="text" name="username" size="10" maxlength="12"></p>
+        <p>Password: <input type="password" name="password" size="8" maxlength="16"></p>
+        <p>Gender:
+            Male: <input type="radio" name="gender">
+            Female: <input type="radio" name="gender"></p>
+        <p> Expertise: <br>
+            Python: <input type="checkbox" value="Python" name="languages"> <br>
+            HTML: <input type="checkbox" value="HTML" name="languages"><br>
+            SQL: <input type="checkbox" value="SQL" name="languages"><br>
+            Javascript: <input type="checkbox" value="Javascript" name="languages">
+        </p>
+        <p>Country: <select name="country">
+                <option value="Pakistan">Pakistan</option>
+                <option selected value="US">US</option>
+                <option value="Canada">Canada</option>
+                <option value="Germany">Germany</option>
+                <option value="UK">UK</option>
+            </select></p>
+        <p>Contact: <input type="number" name="number" size="11" maxlength="13"></p>
+    
+        <textarea name="comments" cols="30" rows="10">Enter your Suggestions...</textarea>
+        <input type="button" value="Submit">
+    </form>
+</body>
+
+</html>
