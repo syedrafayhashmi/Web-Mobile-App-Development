@@ -1,0 +1,19 @@
+.header {
+    text-align: center;
+    font-family: Calibri;
+    color: rgb(106, 90, 205)
+}
+a{
+    color: rgb(106, 90, 205)
+}
+ 
+  .form{
+    font-family: Calibri; 
+    color:white; 
+    font-size: 11pt; 
+    font-style: normal;
+    font-weight: bold;
+    background-color: rgb(106, 90, 205);
+    border: 2px solid rgb(0, 0, 108)
+  }
+  
