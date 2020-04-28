@@ -1,0 +1,93 @@
+p#change:first-letter{
+    font-size: 100px;
+}
+
+
+a.format:link {
+    color: deeppink;
+    text-decoration: none;
+}
+a.format:visited {
+    color: black;
+}
+
+
+input:hover{
+    background-color: rgb(224, 66, 245);
+}
+input:focus{
+    background-color: rgb(241, 215, 215);
+}
+
+button:active{
+    background-color: chartreuse;
+}
+
+p[attr^="d"]{
+    color:blue;
+} */
+
+
+img {
+    width: 100%;
+}
+
+.main {
+    border: 2px solid red;
+    min-width: 200px;
+    max-width: 1000px;
+}  
+
+.main {
+    border: 2px solid red;
+    width: 300px;
+    min-height: 200px;
+    max-height: 300px;
+    overflow: scroll;
+} 
+ .main {
+  width: 30%;
+  border: 20px dashed red;
+
+} */
+
+ 
+li {
+    background-color: salmon;
+    height: 20px;
+    padding: 10px;;
+    margin: 5px;
+    display: inline;
+} 
+
+
+.hide {
+    display: none;
+}
+
+.main {
+    border-image: url('https://i.ya-webdesign.com/images/line-clipart-scroll-5.png') ;
+}
+
+
+
+
+
+h1 {
+    text-align: center;
+    color: brown;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+div {
+    border: 2px solid crimson;
+    box-shadow: 5px 5px 3px grey;
+    border-radius: 50px;
+}
+
+ul{
+    /* list-style-image:url('https://image.shutterstock.com/image-vector/star-vector-icon-260nw-660000226.jpg'); */
+    /* list-style-position: outside; */
+    list-style: inside square;
+}
