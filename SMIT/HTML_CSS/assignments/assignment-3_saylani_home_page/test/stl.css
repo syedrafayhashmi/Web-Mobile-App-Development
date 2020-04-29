@@ -1,8 +1,11 @@
 
 .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     background-color:#316dc3 !important;
-    overflow: auto;
     text-align: center;
 
   }
