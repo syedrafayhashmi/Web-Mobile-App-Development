@@ -2,9 +2,11 @@
     background-color: #316DC3 !important;
    /* border-radius: 25px 25px;
     */color: white !important
+  
 }
 .btn:hover{
     color:white !important;
+ 
 }
 .dropdown:hover>.dropdown-menu {
     display: block;
@@ -14,6 +16,7 @@
   }
   .dropdown-menu:hover{
     color: white !important;
+
   }
   .dropdown-item:hover {
     background-color: #316DC3 !important;
@@ -37,4 +40,28 @@
 }
 #colo{
     color:black
+}
+.bg-light a{
+    font-family: sans-serif !important;
+    font-style: normal;
+    font-size: small;
+    font-weight: normal;
+}
+ul#ml.navbar-nav{
+    margin-left: 30%;
+}
+@media only screen and (max-width:1000px)
+{
+    ul#ml.navbar-nav{
+        margin-left: auto;
+    }
+}
+::-moz-selection { 
+    color: white;
+    background: black;
+  }
+  
+::selection {
+    color: white;
+    background: black;
 }
