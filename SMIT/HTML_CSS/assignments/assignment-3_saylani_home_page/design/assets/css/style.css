@@ -1,0 +1,40 @@
+.dropdown:hover{
+    background-color: #316DC3 !important;
+   /* border-radius: 25px 25px;
+    */color: white !important
+}
+.btn:hover{
+    color:white !important;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  .dropdown>.dropdown-toggle:active {
+      pointer-events: none;
+  }
+  .dropdown-menu:hover{
+    color: white !important;
+  }
+  .dropdown-item:hover {
+    background-color: #316DC3 !important;
+    color: white !important;
+  }
+  .nav-item:hover .btn{
+      color: white;
+  }
+  .btn-group>a{
+      font-size: 11.5px;
+       }
+#tag-line{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+}
+#colo:hover{
+    background-color: #316DC3 !important;
+    color: white;
+}
+#colo{
+    color:black
+}
