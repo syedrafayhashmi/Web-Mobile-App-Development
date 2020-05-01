@@ -37,10 +37,22 @@
 #colo:hover{
     background-color: #316DC3 !important;
     color: white;
+    border-radius: 25px 25px;
+   
 }
 #colo{
-    color:black
+    color:black;
+    width: 60px;
+    text-align: center;
 }
+
+@media only screen and (max-width:989px)
+{
+    #colo{
+        border-radius: 0px 0px
+    }
+}
+
 .bg-light a{
     font-family: sans-serif !important;
     font-style: normal;
@@ -85,3 +97,4 @@ ul#ml.navbar-nav{
     color: white;
     background: black;
 }
+/*add justify to stretch complete line*/
