@@ -1,7 +1,7 @@
 .dropdown:hover{
     background-color: #316DC3 !important;
-   /* border-radius: 25px 25px;
-    */color: white !important
+    border-radius: 25px 25px;
+    color: white !important
   
 }
 .btn:hover{
@@ -55,7 +55,27 @@ ul#ml.navbar-nav{
     ul#ml.navbar-nav{
         margin-left: auto;
     }
+    
 }
+
+@media only screen and (max-width:989px){
+    a.nav-link{
+    
+        border-radius: 0px 0px !important;
+        width: 100% !important;
+        text-align: left !important;
+        
+        
+    }
+}
+@media only screen and (max-width:989px)
+{
+    .dropdown:hover{
+        border-radius: 0px 0px
+    }
+}
+
+
 ::-moz-selection { 
     color: white;
     background: black;
