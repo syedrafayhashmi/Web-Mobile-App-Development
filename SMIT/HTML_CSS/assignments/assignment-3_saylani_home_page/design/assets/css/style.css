@@ -257,3 +257,23 @@ a.p_pseudo_border:after {
         width: 36px;
         bottom:-1px
     }
+
+.social-icons{
+    color:#313437;
+    background-color:#25272E);
+    text-align:center;
+    padding:0px 0}
+    @media (max-width:767px){
+    .social-icons{padding:50px 0}
+    }.social-icons i{
+        font-size:14px;
+        display:inline-block;
+        color:#757980;
+        margin:0 10px;
+        width:30px;
+        height:30px;
+        border:1px solid #25272E;
+        text-align:center;
+        border-radius:50%;
+        line-height:30px
+    }
