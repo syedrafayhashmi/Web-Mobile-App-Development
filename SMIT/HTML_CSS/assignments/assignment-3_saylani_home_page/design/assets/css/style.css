@@ -98,3 +98,25 @@ ul#ml.navbar-nav{
     background: black;
 }
 
+a.pseudo_border {
+    position:relative;
+    display:inline-block;
+}
+a.pseudo_border:before {
+        background: #427900;
+        content: "";
+        height: 2px;
+        position: absolute;
+        right: 40px;
+        top: 30px;
+        width: 36px;
+    }
+a.pseudo_border:after {
+    background:#427900;
+        content: "";
+        height: 2px;
+        left: 40px;
+        position: absolute;
+        top: 30px;
+        width: 36px;
+    }
