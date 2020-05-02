@@ -244,6 +244,16 @@ li{
 }
 div#foot.container{
     padding-top:80px ;
-    margin-left:3%;
+    margin-left:1%;
     padding-bottom: 50px;
 }
+a.p_pseudo_border:after {
+    background:#427900;
+        content: "";
+        height: 2px;
+        left: 15px;
+        position: absolute;
+        top: 18px;
+        width: 36px;
+        bottom:-1px
+    }
