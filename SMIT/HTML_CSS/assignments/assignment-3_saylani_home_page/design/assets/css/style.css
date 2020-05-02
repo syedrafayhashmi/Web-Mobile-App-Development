@@ -277,3 +277,13 @@ a.p_pseudo_border:after {
         border-radius:50%;
         line-height:30px
     }
+div.footer-bottom.bg-black-333{
+    
+
+color: #666666;
+font-size: 11px;
+box-sizing: border-box;
+background-color: #316DD9 !important;
+padding-top: 14px;
+padding-bottom: 14px;}
+
