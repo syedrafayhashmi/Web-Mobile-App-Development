@@ -181,12 +181,6 @@ h4.font-15.text-uppercase{
     font-weight: bold;
 }
 
-.gallery-container p.page-description {
-    text-align: center;
-    margin: 25px auto;
-    font-size: 18px;
-    color: #999;
-}
 
 .tz-gallery {
     padding: 40px;
@@ -244,4 +238,12 @@ h4.font-15.text-uppercase{
     body {
         padding: 0;
     }
+}
+li{
+    list-style:none
+}
+div#foot.container{
+    padding-top:60px ;
+    margin-left:3%;
+    
 }
