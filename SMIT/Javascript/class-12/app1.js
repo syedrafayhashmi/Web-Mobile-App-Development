@@ -3,6 +3,6 @@
 
 // loop an array
 var nam = ["ali","rafay","zain","asad"];
-for (var j = 0 ; j<4; j++){
+for (var j = 0 ; j<nam.length; j++){
     document.write("name is " +nam[j]+"<br>");
 }
