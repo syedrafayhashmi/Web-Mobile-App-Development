@@ -85,4 +85,42 @@ var sar = 25;
 var usd2pkr = usd*104.80;
 var sar2pkr = sar*28;
 var total = usd2pkr + sar2pkr;
+document.write("<h1>Currency in PKR</h1><br>");
+document.write("Total Currency in PKR: "+total+"<br>");
 
+//Task 10
+var num = 5;
+var out = ((num+5)*10)/2;
+
+//Task 11
+var cur_yr = 2016;
+var brt_yr = 1992;
+var age = cur_yr-brt_yr;
+document.write("<h1>Age Calculator</h1><br>");
+
+document.write("Current Year: "+cur_yr+"<br>");
+document.write("Birth Year: "+brt_yr+"<br>");
+document.write("Your Age is: "+age+"<br>" );
+
+//Task 12
+var rad = 20;
+var cir = 2*Math.PI*rad;
+var area = Math.PI*(rad**2);
+document.write("<h1>The Geometrizer</h1><br>");
+document.write("Radius of a circle: "+rad+"<br>");
+document.write("The circumference is: "+cir+"<br>");
+document.write("The area is: "+area+"<br>");
+
+//Task 13
+var snack = "Chocolate chip";
+var current_age = 20;
+var est_age = 80;
+var amt = 3;
+var total = 3*365*(est_age-current_age);
+document.write("<h1>The Lifetime Supply Calculatorr</h1><br>");
+document.write("Favourite Snack: "+ snack + "<br>");
+document.write("Current age: "+ current_age + "<br>");
+document.write("Estimated Maximum Age: "+ est_age + "<br>");
+document.write("Amount of snacks per day: "+ amt + "<br>");
+
+document.write("You will need "+total+" "+snack+" to last you until the ripe old age of "+est_age+"<br>");
