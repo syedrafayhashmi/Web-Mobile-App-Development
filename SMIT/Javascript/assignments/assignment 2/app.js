@@ -20,8 +20,22 @@ alert(course)
 var word = prompt("Enter any Word");
 var text = "";
 for (i =  word.length ; i>0; i--){
-    text += word.slice(0,i) + "\n"
+    text += word.slice(0,i) + "\n";
 }
-alert(text)
+alert(text);
 
 // Task 6
+var email = "rafaysidsid@gmail.com";
+alert("My email address is " +email);
+
+//Task 7
+var book = "A smarter way to learn JavaScript";
+alert(book);
+
+//Task 8
+document.write("Yah! I can write HTML content through JavaScript");
+
+//Task 9
+var design = "▬▬▬▬▬▬▬▬▬ஜ ۩۞۩ ஜ▬▬▬▬▬▬▬▬▬";
+alert(design);
+
