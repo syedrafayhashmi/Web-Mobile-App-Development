@@ -45,3 +45,44 @@ var table = +prompt("enter any number");
 for (i = 1; i<=10;i++){
     document.write(table+"x"+i+"="+table*i+"<br>");
 }
+
+//Task 6
+var cel = 25;
+var deg_fahr = (cel*9/5) + 32;
+var fahr = 70;
+var deg_cel = (fahr -32)*5/9;
+document.write(cel+"°C is " + deg_fahr +"°F"+"<br>");
+document.write(fahr+"°F is " + deg_cel +"°C"+"<br>");
+
+//Task 7
+var item1 = 650;
+var item2 = 100;
+var qty1 = 3;
+var qty2 = 7;
+var shipping = 100;
+var total_cost = (item1*qty1)+(item2*qty2) + shipping;
+
+document.write("<h1>Shopping Cart</h1><br>");
+document.write("Price of item 1 is "+ item1+"<br>");
+document.write("Quantity of item 1 is "+ qty1+"<br>");
+document.write("Price of item 2 is "+ item2+"<br>");
+document.write("Quantity of item 2 is "+ qty2+"<br>");
+document.write("Shipping Charges "+ shipping+"<br><br>");
+document.write("Total cost of your order is "+ total_cost+"<br>");
+
+//Task 8
+var total_marks = 980;
+var obt_marks = 804;
+var percent  = obt_marks/total_marks*100;
+document.write("<h1>Marks Sheet</h1><br>");
+document.write("Total marks: " + total_marks+"<br>");
+document.write("Total marks: " + obt_marks+"<br>");
+document.write("Percentage: " + percent+"<br>");
+
+//Task 9
+var usd = 10;
+var sar = 25;
+var usd2pkr = usd*104.80;
+var sar2pkr = sar*28;
+var total = usd2pkr + sar2pkr;
+
