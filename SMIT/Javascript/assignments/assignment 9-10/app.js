@@ -135,7 +135,7 @@ if (number%3 == 0){
     alert("Given number is divisible by 3");
 }
 //Task 9
- var numb = +prompt("Enter a number");
+var numb = +prompt("Enter a number");
 if (numb%2 == 0){
     alert("Given number is Even");
 }
@@ -144,3 +144,43 @@ else{
 }
 
 //Task 10
+var temp = +prompt("Enter Temperature");
+if(temp > 40){
+    alert("It is too hot outside.");
+}
+else if(temp > 30){
+    alert("The Weather today is Normal.");
+}
+else if(temp > 20){
+    alert("Today’s Weather is cool.");
+}
+else if(temp > 10){
+    alert("OMG! Today’s weather is so Cool.");
+}
+
+//Task 11
+var num1 = +prompt("Enter First Number");
+var num2 = +prompt("Enter Second Number");
+var operator = prompt("Enter Operator");
+if(operator === "+"){
+    alert(num1+num2);
+}
+if(operator === "-"){
+    alert(num1-num2);
+}
+if(operator === "*"){
+    alert(num1*num2);
+}
+if(operator === "/"){
+    alert(num1/num2);
+}
+if(operator === "%"){
+    alert(num1%num2);
+}
+
+
+
+
+
+
+
