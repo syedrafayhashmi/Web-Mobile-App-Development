@@ -99,3 +99,7 @@ document.write("Out: <br>"+array.pop()+"<br>");
 document.write("Out: <br>"+array.pop()+"<br>");
 document.write("Out: <br>"+array.pop()+"<br>");
 document.write("Out: <br>"+array.pop()+"<br>");
+
+//Task 15
+var phone = ["Apple", "Samsung", "Motorola", "Nokia", "Sony" , "Haier"];
+document.write("<select><option>"+phone[0]+"</option><option>"+phone[1]+"</option><option>"+phone[2]+"</option><option>"+phone[3]+"</option><option>"+phone[4]+"</option><option>"+phone[5]+"</option></select>")
