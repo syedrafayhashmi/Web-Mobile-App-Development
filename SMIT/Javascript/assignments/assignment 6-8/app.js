@@ -1,41 +1,41 @@
-// //Task 1
-// var a = 10;
-// document.write("Result: <br>");
-// document.write("The value of a is: " + a + "<br>");
-// document.write("***************************"+ "<br><br>");
-// document.write("The value of ++a is: " + ++a + "<br>");
-// document.write("Now the value of a is: " + a + "<br><br>");
-// document.write("The value of ++a is: " + a++ + "<br>");
-// document.write("Now the value of a is: " + a + "<br><br>");
-// document.write("The value of --a is: " + --a + "<br>");
-// document.write("Now the value of a is: " + a + "<br><br>");
-// document.write("The value of a-- is: " + a-- + "<br>");
-// document.write("Now the value of a is: " + a + "<br><br>");
+//Task 1
+var a = 10;
+document.write("Result: <br>");
+document.write("The value of a is: " + a + "<br>");
+document.write("***************************"+ "<br><br>");
+document.write("The value of ++a is: " + ++a + "<br>");
+document.write("Now the value of a is: " + a + "<br><br>");
+document.write("The value of ++a is: " + a++ + "<br>");
+document.write("Now the value of a is: " + a + "<br><br>");
+document.write("The value of --a is: " + --a + "<br>");
+document.write("Now the value of a is: " + a + "<br><br>");
+document.write("The value of a-- is: " + a-- + "<br>");
+document.write("Now the value of a is: " + a + "<br><br>");
 
-// //Task 2
-// var a = 2, b = 1;
-// document.write("a is" + a+ "<br>");
-// document.write("b is" + b+ "<br>");
-// var result = --a - --b + ++b + b--;
-// document.write("result is" + result+ "<br>");
-// // explanation: 
-// //at stage --a; a has value 1 as 1 has been subtracted so result is 1
-// //at --a - --b; a has value 1 and b has value 0 so result is 1
-// //at --a - --b + ++b; a has value 1 and b is 1 after ++b so reult is 2
-// // final result is 3
+//Task 2
+var a = 2, b = 1;
+document.write("a is" + a+ "<br>");
+document.write("b is" + b+ "<br>");
+var result = --a - --b + ++b + b--;
+document.write("result is" + result+ "<br>");
+// explanation: 
+//at stage --a; a has value 1 as 1 has been subtracted so result is 1
+//at --a - --b; a has value 1 and b has value 0 so result is 1
+//at --a - --b + ++b; a has value 1 and b is 1 after ++b so reult is 2
+// final result is 3
 
-// //Task 3
-// var name = prompt("Enter your name");
-// alert("welcome "+name);
+//Task 3
+var name = prompt("Enter your name");
+alert("welcome "+name);
 
-// //Task 4 
-// // not mentioned
+//Task 4 
+// not mentioned
 
-// //Task 5
-// var table = +prompt("enter any number","5");
-// for (i = 1; i<=10;i++){
-//     document.write(table+"x"+i+"="+table*i+"<br>");
-// }
+//Task 5
+var table = +prompt("enter any number","5");
+for (i = 1; i<=10;i++){
+    document.write(table+"x"+i+"="+table*i+"<br>");
+}
 
 //Task 6
 var sub1 = prompt("Enter Subject 1 Name");
