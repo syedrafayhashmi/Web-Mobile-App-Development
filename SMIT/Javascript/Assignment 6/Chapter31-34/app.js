@@ -66,3 +66,26 @@ var prevTime = currentTime.setHours(currentHours-1);
 document.write("1 hour ago, it was " + currentTime+"<br>");
 
 // Task 12
+var currentTime = new Date();
+var currentYear = currentTime.getFullYear();
+var prevTime = currentTime.setFullYear(currentYear-100);
+alert("current date:"+ Date()+"\n100 years back, it was " + currentTime)
+
+// Task 13
+var age = +prompt("enter your age");
+var birthYear = new Date().getFullYear()-age;
+document.write("Your age is " + age +"<br>");
+document.write("Your birth year is " + birthYear +"<br>");
+
+// Task 14
+document.write("<h1>K-Electric Bill</h1><br>");
+document.write("Customer Name: <strong>Syed Rafay Hashmi</strong><br>");
+document.write("Month: <strong>February</strong><br>");
+var units = 410;
+document.write("No of Units: <strong>"+units+"</strong><br>");
+var rate = 16;
+document.write("Charges per unit: <strong>"+rate+"</strong><br><br>");
+document.write("Net Amount Payable (within Due Date): <strong>"+units*rate+"</strong><br>");
+var late = 350;
+document.write("Late payment surcharge: <strong>"+late+"</strong><br>");
+document.write("Gross Amount Payable (after Due Date): <strong>"+ (units*rate+late) +"</strong><br>");
