@@ -3,7 +3,7 @@ function dateTime(){
     time = new Date();
     return document.write(time+"<br>");
 }
-//dateTime();
+dateTime();
 
 // Task 2
 function greet(){
@@ -12,46 +12,46 @@ function greet(){
    var fullName = first.concat(last)
    return document.write("Hello "+fullName+"<br>");
 }
-//greet();
+greet();
 
 // Task 3
 function sum(){
     var num1 = +prompt("Enter number 1");
     var num2 = +prompt("Enter number 2");
-    return document.write(num1+num2);
+    return document.write(num1+num2+"<br>");
 }
-//sum();
+sum();
 
 // Task 4
 function calculator(num1,num2,operator){
      if(operator === "+"){
-        return document.write(num1+num2);   
+        return document.write(num1+num2+"<br>");   
     }
     if(operator === "-"){
-        return document.write(num1-num2);
+        return document.write(num1-num2+"<br>");
     }
     if(operator === "*"){
-        return document.write(num1*num2);
+        return document.write(num1*num2+"<br>");
     }
     if(operator === "/"){
-        return document.write(num1/num2);
+        return document.write(num1/num2+"<br>");
     }
     if(operator === "%"){
-        return document.write(num1%num2);
+        return document.write(num1%num2+"<br>");
     }
     else{
-        return document.write("Wrong Input");
+        return document.write("Wrong Input<br>");
     }
 }
-//calculator(5,4,"+");
-//calculator(40,8,"/");
-//calculator(5,4,"*");
+calculator(5,4,"+");
+calculator(40,8,"/");
+calculator(5,4,"*");
 
 // Task 5
 function square(num){
-    document.write(Math.pow(num,2));
+    document.write(Math.pow(num,2)+"<br>");
 }
-//square(6);
+square(6);
 
 // Task 6
 function factorial(number){
@@ -64,7 +64,7 @@ function factorial(number){
     }
 }
 
-//document.write(factorial(5));
+document.write(factorial(5)+"<br>");
 
 // Task 7
 function counting(){
@@ -74,7 +74,7 @@ function counting(){
         document.write(start+"<br>");
     }
 }
-//counting();
+counting();
 
 // Task 8
 function calculateHypotenuse(base,perp){
@@ -83,16 +83,16 @@ function calculateHypotenuse(base,perp){
     }
     return Math.sqrt(calculateSquare(base)+calculateSquare(perp));
 }
-//document.write(calculateHypotenuse(3,4)+"<br>");
+document.write(calculateHypotenuse(3,4)+"<br>");
 
 // Task 9
 function area(width,height){
     return width*height;
 }
-//document.write(area(4,5)+"<br>");
+document.write(area(4,5)+"<br>");
 var width = 6;
 var height = 5;
-//document.write(area(width,height)+"<br>");
+document.write(area(width,height)+"<br>");
 
 // Task 10
 function palindromeChecker(word){
@@ -106,7 +106,7 @@ function palindromeChecker(word){
         document.write(temp + " is a palindrome"+"<br>");
     }
 }
-//palindromeChecker("madam");
+palindromeChecker("madam");
 
 // Task 11
 function toTitleCase(string){
@@ -117,7 +117,7 @@ function toTitleCase(string){
     }
     return lower.join(" ");
 }
-//document.write(toTitleCase("the quick brown fox"));
+document.write(toTitleCase("the quick brown fox")+"<br>");
 
 // Task 12
 function longest(string){
@@ -132,7 +132,7 @@ function longest(string){
     }
     return ar[idx];
 }
-//document.write(longest("Web Development Tutorial")+"<br>");
+document.write(longest("Web Development Tutorial")+"<br>");
 
 // Task 13
 function occurence(string,letter){
@@ -145,4 +145,14 @@ function occurence(string,letter){
 }
     return count;
 }
-//document.write(occurence("JSResourceS.com","o")+"<br>");
+document.write(occurence("JSResourceS.com","o")+"<br>");
+
+// Task 14
+function calcCircumference(radius){
+    return "The circumference is " + 2*Math.PI*radius+ "<br>"
+}
+function calcArea(radius){
+    return "The area is " + Math.PI*Math.pow(radius,2) + "<br>"
+}
+document.write(calcCircumference(5));
+document.write(calcArea(5));
