@@ -4,31 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <title>Calculator</title>
 
 </head>
 <body>
     <form class = "calculator" name = "calc">
-        <input class = "value" type = "text"  name = "txt" readonly = "">
-        <span class = "num clear">C</span>
-        <span class = "num">/</span>
-        <span class = "num">*</span>
-        <span class = "num">7</span>
-        <span class = "num">8</span>
-        <span class = "num">9</span>
-        <span class = "num">-</span>
-        <span class = "num">4</span>
-        <span class = "num">5</span>
-        <span class = "num">6</span>
-        <span class = "num plus">+</span>
-        <span class = "num">1</span>
-        <span class = "num">2</span>
-        <span class = "num">3</span>
-        <span class = "num">0</span>
-        <span class = "num">00</span>
-        <span class = "num">.</span>
-        <span class = "num equal">=</span>  
+        <input id = "result" class = "value" type = "text"  name = "txt">
+        <span class = "num clear" onclick="clearResult()">C</span>
+        <span class = "num" onclick="getNumber('/')">/</span>
+        <span class = "num" onclick="getNumber('*')">x</span>
+        <span class = "num" onclick="getNumber('7')">7</span>
+        <span class = "num" onclick="getNumber('8')">8</span>
+        <span class = "num" onclick="getNumber('9')">9</span>
+        <span class = "num" onclick="getNumber('-')">-</span>
+        <span class = "num" onclick="getNumber('4')">4</span>
+        <span class = "num" onclick="getNumber('5')">5</span>
+        <span class = "num" onclick="getNumber('6')">6</span>
+        <span class = "num plus" onclick="getNumber('+')">+</span>
+        <span class = "num" onclick="getNumber('1')">1</span>
+        <span class = "num" onclick="getNumber('2')">2</span>
+        <span class = "num" onclick="getNumber('3')">3</span>
+        <span class = "num" onclick="getNumber('0')">0</span>
+        <span class = "num" onclick="getNumber('00')">00</span>
+        <span class = "num" onclick="getNumber('.')">.</span>
+        <span class = "num equal" onclick="result()">=</span>  
     </form>
 </body>
 <script src = app.js></script>
