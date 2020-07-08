@@ -8,3 +8,11 @@ function readMore_2(){
     var paragraph2  = document.getElementById("para");
     paragraph2.innerHTML = text2;
 }
+function image1(){
+    var image = document.getElementById('img');
+    image.src = "1.jpg";
+}
+function image2(){
+    var image = document.getElementById('img');
+    image.src = "2.jpg";
+}
