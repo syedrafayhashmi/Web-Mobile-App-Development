@@ -3,3 +3,8 @@ function readMore(){
     var paragraph  = document.getElementById("para");
     paragraph.innerHTML = text;
 }
+function readMore_2(){
+    var text2 = document.getElementById("text").innerHTML;
+    var paragraph2  = document.getElementById("para");
+    paragraph2.innerHTML = text2;
+}
