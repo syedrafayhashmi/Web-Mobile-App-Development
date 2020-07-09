@@ -8,18 +8,24 @@
     <title>Stop Watch</title>
 </head>
 <body>
-    <div>
-        <div>0</div>
-        <div>:</div>
-        <div>0</div>
-        <div>:</div>
-        <div>0</div>
-        <div>0</div>
+
+    
+   <div class = "container">
+    <div class = "row"> 
+        <h1 style= "padding-bottom: 50px; padding-left:50px">Stopwatch</h1>
     </div>
-    <div>
-        <button>Start</button>
-        <button>Stop</button>
-        <button>Reset</button>
+
+       <div class = "row">
+    <h1 id="min" class="col-4">00</h1>
+    <h1 id="sec" class="col-4">00</h1>
+    <h1 id="msec" class="col-4">00</h1>
+</div>
+
+        <div class = "row">
+        <button type="button" class="btn btn-success col-4">Start</button>
+        <button type="button" class="btn btn-danger col-4">Stop</button>
+        <button type="button" class="btn btn-warning col-4">Reset</button>
+    </div>
     </div>
 </body>
 <script src = "app.js"></script>
