@@ -11,11 +11,13 @@ function timer(){
         sec++;
         secHeading.innerHTML = sec;
         msec=0;
-    }
-    if (sec>=60){
+    }else if (sec>=60){
         min++;
         minHeading.innerHTML = min;
         sec = 0;
     }
  }
+ function start(){
 interval = setInterval(timer,10);
+ }
+ 
