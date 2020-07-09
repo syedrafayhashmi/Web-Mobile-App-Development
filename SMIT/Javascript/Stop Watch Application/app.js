@@ -4,6 +4,8 @@ var msec = 0;
 var minHeading = document.getElementById("min");
 var secHeading = document.getElementById("sec");
 var msecHeading = document.getElementById("msec");
+var startbutton = document.getElementById("start");
+var interval;
 function timer(){
     msec++;
     msecHeading.innerHTML = msec;
@@ -19,5 +21,21 @@ function timer(){
  }
  function start(){
 interval = setInterval(timer,10);
+//startbutton.onclick +='disabled';
+startbutton.disabled = true; 
+}
+
+ function pause(){
+    startbutton.disabled = false; 
+     clearInterval(interval);
  }
- 
+ function reset(){
+    startbutton.disabled = false; 
+    clearInterval(interval);
+    min=0;
+    sec=0;
+    msec=0
+    minHeading.innerHTML = min;
+    secHeading.innerHTML = sec;
+    msecHeading.innerHTML = msec;
+ }
