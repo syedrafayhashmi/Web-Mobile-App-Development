@@ -60,4 +60,64 @@ function CustomIndexOf(string,word){
 }
 
 // Task 7
-function count_vowel()
+function count_vowel(string){
+    var vowels = ["a","e","i","o","u"];
+    var count = 0;
+    for(var x = 0;x<string.length;x++){
+        switch (vowels.includes(string[x]) && vowels.includes(string[x+1])){
+            case true:
+                count++;
+                break;
+        }
+    }
+    return count;
+}
+
+// Task 8
+function dist_in_meters(d){
+    return  d*1000; 
+}
+function dist_in_feet(d){
+    return  d*3281;  //approx 
+}
+function dist_in_inches(d){
+    return  d*39370; 
+}
+function dist_in_centimeters(d){
+    return  d*100000; 
+}
+var distance = prompt("Enter distance between two cities (in km.)");
+var out = "Distance in meters: "+dist_in_meters(distance)+"\n"+
+          "Distance in feet: "+dist_in_feet(distance)+"\n"+
+          "Distance in inches: "+dist_in_inches(distance)+"\n"+
+          "Distance in centimeters: "+dist_in_centimeters(distance)+"\n";
+alert(out);
+
+// Task 9
+ function overtimePay(hours){ 
+    if( hours>40){
+         return (hours-40)*12;
+     }
+     else{
+         return 0;
+     }
+ }
+ var hoursWorked = prompt("Enter the number of hours worked");
+alert("Your overtime pay is "+overtimePay(hoursWorked));
+
+// Task 10
+
+var amount  = prompt("Enter amount to Withdraw");
+if(amount%10 !== 0){
+    alert("Enter amount in multiple of 10");
+}
+function withdraw(amount){
+    var notes = [10, 50, 100];
+    var out = [];
+    for(var c=notes.length-1;c>=0;c--){
+        out.push((amount-amount%notes[c])/notes[c])
+        amount-= amount-amount%notes[c]
+    }
+    return out;
+}
+document.write("You will have "+withdraw(amount)[0]+" hundred note(s) "+withdraw(amount)[1]+" fifty note(s) "+withdraw(amount)[2]+" ten note(s)")
