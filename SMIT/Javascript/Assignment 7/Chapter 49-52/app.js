@@ -19,6 +19,34 @@ function readMore(){
 
 // Task 3 Also see HTML file named task3.html
 
-function edit(
+function addStudent(){
+    var tableBody = document.getElementById("tableBody");
+    var Name = document.getElementById("Name").value;
+    var Class = document.getElementById("Class").value;
+    var rowCount = document.getElementById('dataTable').rows.length;
+    tableBody.innerHTML += "<tr><th scope='row'>"+rowCount+"</th> <td>"+Name+"</td><td>"+Class+"</td><td><button type='button' class='btn btn-warning' onclick = 'editform(this)' >Edit</button></td><td><button type='button' class='btn btn-danger' onclick = 'rowDelete(this)'>Delete</button></td></tr>";
+}
+function rowDelete(r){
+    var i = r.parentNode.parentNode.rowIndex;
+    document.getElementById("dataTable").deleteRow(i);
+}
+var idx;
+function editform(r){
+    $('#ModalEdit').modal('show');
+    idx = r.parentNode.parentNode.rowIndex;
+    var editTable = document.getElementById('dataTable');
+    var editCells = editTable.rows.item(idx).cells;
+    var cellName = editCells.item(1).innerHTML;
+    var cellClass = editCells.item(2).innerHTML;
+    document.getElementById("editName").value = cellName;
+    document.getElementById("editClass").value = cellClass;
+}
+function edit(idx){
+    var repName = document.getElementById("editName").value;
+    var repClass = document.getElementById("editClass").value;
+    var t = document.getElementById('dataTable');
+    t.rows.item(idx).cells.item(1).innerHTML = repName;
+    t.rows.item(idx).cells.item(2).innerHTML = repClass;
     
-)
+
+}
