@@ -3,8 +3,12 @@
 // Task 2 See HTML
 
 // Task 3 Also see HTML
-function rowDelete(rowIndex){
-    document.getElementById("table").deleteRow(rowIndex);
+// function rowDelete(rowIndex){
+//     document.getElementById("table").deleteRow(rowIndex);
+// }
+function rowDelete(r) {
+    var i = r.parentNode.parentNode.rowIndex;
+    document.getElementById("table").deleteRow(i);
 }
 
 // Task 4 Also See HTML
