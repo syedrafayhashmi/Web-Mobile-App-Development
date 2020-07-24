@@ -47,3 +47,6 @@ function addTodo(){
 function deleteItem(e){
     list.removeChild(e.parentNode)
 }
+function deleteAll(){
+    list.innerHTML = ""
+}
