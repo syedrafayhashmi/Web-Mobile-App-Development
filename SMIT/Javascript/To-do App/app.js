@@ -14,6 +14,8 @@ function addTodo(){
     deleteButton.className  = "btn text-white btn-danger";
     editButton.className  = "btn text-white btn-warning";
 
+    deleteButton.setAttribute("onclick","deleteItem(this)");
+
     li.style.float = "left"; 
     li.style.width = "40%";
     deleteButton.style.width = "30%";
@@ -35,6 +37,10 @@ function addTodo(){
     div.appendChild(deleteButton);
     
     list.appendChild(div);
-        
+
     todoValue.value = "";
+}
+
+function deleteItem(e){
+    list.removeChild(e.parentNode)
 }
