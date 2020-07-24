@@ -1,10 +1,10 @@
 var list = document.getElementById("item");
+var div = document.createElement('div');
 
 
 function addTodo(){
     var todoValue = document.getElementById("todo-value");
     var disIp = document.createElement('input');
-    var div = document.createElement('div');
     var deleteButton = document.createElement('button');
     var editButton = document.createElement('button');
 
@@ -21,6 +21,7 @@ function addTodo(){
 
     deleteButton.setAttribute("onclick","deleteItem(this)");
     editButton.setAttribute("onclick","editItem(this)");
+    
     disIp.setAttribute("disabled","");
 
     disIp.style.float = "left"; 
@@ -29,9 +30,11 @@ function addTodo(){
     deleteButton.style.float = "left";
     editButton.style.width = "30%";
     editButton.style.float = "left";
-
+   
+    
     var delText = document.createTextNode("Delete");
     var editText = document.createTextNode("Edit");
+
 
     disIp.value = todoValue.value;
 
@@ -56,8 +59,19 @@ function deleteAll(){
     list.innerHTML = ""
 }
 function editItem(e){
-  e.parentNode.firstChild.removeAttribute("disabled");
-  e.parentNode.firstChild.focus();
+    var updateButton = document.createElement('button');
+    updateButton.className = "btn text-white btn-warning";
+    updateButton.setAttribute("onclick","updateItem(this)");
+    updateButton.style.width = "30%";
+    updateButton.style.float = "left"; 
+    var updateText = document.createTextNode("Update");
+    updateButton.appendChild(updateText);
+
+
+    e.parentNode.firstChild.removeAttribute("disabled");
+    e.parentNode.firstChild.focus();
+    e.parentNode.children[1].style.display = "none";
+    div.insertBefore(updateButton,e.parentNode.children[1]);
 
 }
 
