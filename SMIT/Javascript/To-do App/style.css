@@ -2,5 +2,27 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    text-align: center;
+    margin-top: 5%
+    
+}
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('bg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-blend-mode:
+}
+.container{
+    max-width:550px !important
+}
+#mainbutton{
+    margin:10px
 }
