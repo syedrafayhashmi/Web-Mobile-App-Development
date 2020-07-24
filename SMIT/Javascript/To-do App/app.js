@@ -36,7 +36,10 @@ function addTodo(){
     div.appendChild(editButton);
     div.appendChild(deleteButton);
     
-    list.appendChild(div);
+    if(todoValue.value !== ""){
+        list.appendChild(div);
+    }
+   
 
     todoValue.value = "";
 }
