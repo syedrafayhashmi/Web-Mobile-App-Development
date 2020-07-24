@@ -3,38 +3,41 @@ var list = document.getElementById("item");
 
 function addTodo(){
     var todoValue = document.getElementById("todo-value");
-    var li = document.createElement('li');
+    var disIp = document.createElement('input');
     var div = document.createElement('div');
     var deleteButton = document.createElement('button');
     var editButton = document.createElement('button');
 
     div.style.display = "inline";
     div.className = "list-group";
-    li.className  = "list-group list-group-item list-group-item-action list-group-item-success";
+    disIp.className  = "form-control";
     deleteButton.className  = "btn text-white btn-danger";
     editButton.className  = "btn text-white btn-warning";
 
+    div.id = "list_in"
+    disIp.id = "disabledInput"
+
+    disIp.type = "text"
+
     deleteButton.setAttribute("onclick","deleteItem(this)");
     editButton.setAttribute("onclick","editItem(this)");
+    disIp.setAttribute("disabled","");
 
-
-    li.style.float = "left"; 
-    li.style.width = "40%";
+    disIp.style.float = "left"; 
+    disIp.style.width = "40%";
     deleteButton.style.width = "30%";
     deleteButton.style.float = "left";
-    deleteButton.style.marginTop  = "5px";
     editButton.style.width = "30%";
     editButton.style.float = "left";
-    editButton.style.marginTop  = "5px";
 
     var delText = document.createTextNode("Delete");
     var editText = document.createTextNode("Edit");
-    var liText = document.createTextNode(todoValue.value);
+
+    disIp.value = todoValue.value;
 
     editButton.appendChild(editText);
     deleteButton.appendChild(delText);
-    li.appendChild(liText);
-    div.appendChild(li);
+    div.appendChild(disIp);
     div.appendChild(editButton);
     div.appendChild(deleteButton);
     
@@ -53,7 +56,9 @@ function deleteAll(){
     list.innerHTML = ""
 }
 function editItem(e){
-    e.parentNode.firstChild.innerText = "rafay"
+  e.parentNode.firstChild.removeAttribute("disabled");
+  e.parentNode.firstChild.focus();
+
 }
 
 var input = document.getElementById("todo-value");
