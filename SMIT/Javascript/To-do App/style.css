@@ -23,6 +23,6 @@ body{
 .container{
     max-width:550px !important
 }
-#mainbutton{
+#add, #del{
     margin:10px
 }

@@ -15,6 +15,8 @@ function addTodo(){
     editButton.className  = "btn text-white btn-warning";
 
     deleteButton.setAttribute("onclick","deleteItem(this)");
+    editButton.setAttribute("onclick","editItem(this)");
+
 
     li.style.float = "left"; 
     li.style.width = "40%";
@@ -50,3 +52,11 @@ function deleteItem(e){
 function deleteAll(){
     list.innerHTML = ""
 }
+
+var input = document.getElementById("todo-value");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("add").click();
+  }
+});
