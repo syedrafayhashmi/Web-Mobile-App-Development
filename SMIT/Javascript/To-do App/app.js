@@ -52,6 +52,9 @@ function deleteItem(e){
 function deleteAll(){
     list.innerHTML = ""
 }
+function editItem(e){
+    e.parentNode.firstChild.innerText = "rafay"
+}
 
 var input = document.getElementById("todo-value");
 input.addEventListener("keyup", function(event) {
