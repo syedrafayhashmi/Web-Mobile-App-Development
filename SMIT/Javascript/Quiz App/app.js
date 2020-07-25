@@ -53,12 +53,16 @@ var Questions = [
 ]
 
 var quiz = document.getElementById("quiz");
-
+var prog = document.getElementsByClassName("progress-bar");
+var pcg =  +document.getElementsByClassName('progress-bar').item(0).ariaValueNow 
+document.getElementsByClassName('progress-bar').item(0).setAttribute('aria-valuenow',pcg);
+document.getElementsByClassName('progress-bar').item(0).setAttribute('style','width:'+Number(pcg)+'%');
+var ans = 0;
+var score = 0;
 function startQuiz(q){
     quiz.children[1].style.display = "none";
     for(var i = 2 ; i<quiz.childElementCount;i++){
-        quiz.children[i].style.display = "";
-        
+        quiz.children[i].style.display = "";    
     }
     var idx = 0;
     for(var j = 4 ; j<8;j++){
@@ -70,6 +74,19 @@ function startQuiz(q){
     quiz.children[3].appendChild(document.createTextNode("Q"+ questionNumber +" : "+ Object.values(Questions)[q].question))
     quiz.children[8].children[0].appendChild(document.createTextNode("Q: "+questionNumber+" of "+Questions.length))
 
-  
+}
+
+function nextQuestion(){
+    pcg+=20;
+    document.getElementsByClassName('progress-bar').item(0).setAttribute('aria-valuenow',pcg);
+    document.getElementsByClassName('progress-bar').item(0).setAttribute('style','width:'+Number(pcg)+'%');
+    var userAnswer = document.querySelector('input[name="userAnswer"]:checked').value
+    if(userAnswer == Questions[ans].correctAnswer){
+        score+=1;
+    }
+    console.log(score)
+    ans+=1;
+
+
 
 }
