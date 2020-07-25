@@ -20,8 +20,9 @@ body{
     height: 100%;
     background-blend-mode:
 }
+
 .container{
-    max-width:550px !important
+    max-width:550px !important;
 }
 .col{
     background-color: rgb(252, 255, 240);
