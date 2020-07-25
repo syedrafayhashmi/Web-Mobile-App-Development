@@ -109,5 +109,15 @@ function submit(){
     for(var i = 2 ; i<quiz.childElementCount;i++){
         quiz.children[i].style.display = "none";    
     }
-    quiz.appendChild()
+    var userAnswer = document.querySelector('input[name="userAnswer"]:checked').value
+    
+    if(userAnswer == Questions[ans].correctAnswer){
+        score+=1;
+    }
+    var result = document.createElement('h1');
+    result.style.marginTop = "180px";
+    var resultText = document.createTextNode("Your score is "+ score*(100/Questions.length)+ "%");
+    result.appendChild(resultText);
+
+    quiz.appendChild(result);
 }
