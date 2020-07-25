@@ -58,9 +58,14 @@ function startQuiz(q){
     quiz.children[1].style.display = "none";
     for(var i = 2 ; i<quiz.childElementCount;i++){
         quiz.children[i].style.display = "";
+        
+    }
+    var idx = 0;
+    for(var j = 4 ; j<8;j++){
+        
+        quiz.children[j].children[1].appendChild(document.createTextNode(Object.values(Object.values(Questions)[0].answers)[idx]))
+        idx+=1;
     }
   
-
-    
 
 }

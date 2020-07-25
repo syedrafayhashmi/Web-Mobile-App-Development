@@ -23,6 +23,10 @@ body{
 
 .container{
     max-width:550px !important;
+    text-align: left;
+}
+h1{
+    text-align: center;
 }
 .col{
     background-color: rgb(252, 255, 240);
