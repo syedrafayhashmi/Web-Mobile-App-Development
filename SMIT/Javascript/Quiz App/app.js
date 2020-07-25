@@ -44,8 +44,8 @@ var Questions = [
         answers : {
             a : "//Comment",
             b : "/*Comment*/",
-            c : "<!--Comment-->",
-            d : "#Comment"
+            c : "#Comment",
+            d : "None of the above"
         },
         correctAnswer : "a"
     },
@@ -62,7 +62,7 @@ var score = 0;
 var questionNumber = 0; 
 function startQuiz(q){
     quiz.children[1].style.display = "none";
-    for(var i = 2 ; i<quiz.childElementCount;i++){
+    for(var i = 2 ; i<quiz.childElementCount-1;i++){
         quiz.children[i].style.display = "";    
     }
     var idx = 0;
@@ -97,6 +97,17 @@ function nextQuestion(){
         idx+=1;
     }
     document.querySelector('input[name="userAnswer"]:checked').checked = false;
+    if(questionNumber == 5){
+        quiz.children[9].style.display = "none";
+        quiz.children[10].style.display = "";
+
+    }
 
 
+}
+function submit(){
+    for(var i = 2 ; i<quiz.childElementCount;i++){
+        quiz.children[i].style.display = "none";    
+    }
+    quiz.appendChild()
 }

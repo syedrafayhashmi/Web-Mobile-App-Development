@@ -41,7 +41,7 @@ h1{
     font-weight: bolder;
 
 }
-.nextbutton{
+.nextbutton, .submitbutton{
     position: absolute;
  
     bottom: 5px;
