@@ -26,5 +26,23 @@ body{
 }
 .col{
     background-color: rgb(252, 255, 240);
-    border-radius: 3px;
+    border-radius: 10px;
+    min-height: 480px;
+}
+.number{
+    position: absolute;
+    width: 50%;
+    bottom: 0px;
+    text-align: left;
+    font-weight: bolder;
+
+}
+.nextbutton{
+    position: absolute;
+ 
+    bottom: 5px;
+    right:5px;
+
+
+
 }

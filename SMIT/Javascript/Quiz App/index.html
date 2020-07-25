@@ -19,8 +19,38 @@
         <div class="container">
             <div id = "quiz" class="col">
                 <h1>Quiz</h1>
-                <p id = "question"></p>
+                <div style = "padding-top:35%" >
+                <button type="button" onclick = "startQuiz(0)" class="btn-lg btn-block btn-primary">Start Quiz</button>
+              </div>
+              <div class="progress" style = "display: none;">
+                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
 
+              <div class="alert alert-primary" role="alert" style = "display: none;">
+                
+              </div>
+              <div class="custom-control custom-radio" style = "display: none;">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1"></label>
+              </div>
+              <div class="custom-control custom-radio" style = "display: none;">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2"></label>
+              </div>
+              <div class="custom-control custom-radio" style = "display: none;">
+                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio3"></label>
+              </div>
+              <div class="custom-control custom-radio" style = "display: none;">
+                <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio4"></label>
+              </div>
+              <div class = "number" style = "display: none;">
+                <p>Q</p>
+              </div>
+              <div class = "nextbutton" style = "display: none;">
+              <button type="button" onclick = "nextQuestion()" class="btn-lg btn btn-primary">Next</button>
+            </div>
                 
             </div>
           </div>

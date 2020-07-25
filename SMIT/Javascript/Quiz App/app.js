@@ -52,7 +52,15 @@ var Questions = [
     
 ]
 
-var list = document.getElementById("item");
+var quiz = document.getElementById("quiz");
 
+function startQuiz(q){
+    quiz.children[1].style.display = "none";
+    for(var i = 2 ; i<quiz.childElementCount;i++){
+        quiz.children[i].style.display = "";
+    }
+  
 
+    
 
+}
