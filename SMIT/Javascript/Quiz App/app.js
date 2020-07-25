@@ -20,12 +20,12 @@ var Questions = [
         correctAnswer : "a"
     },
     {
-        question : "Inside which HTML element do we put the JavaScript?",
+        question : "How many types of heading does an HTML contain?",
         answers : {
-            a : "<js>",
-            b : "<javascript>",
-            c : "<scripting>",
-            d : "<script>"
+            a : "10",
+            b : "5",
+            c : "1",
+            d : "6"
         },
         correctAnswer : "d"
     },
@@ -59,6 +59,7 @@ document.getElementsByClassName('progress-bar').item(0).setAttribute('aria-value
 document.getElementsByClassName('progress-bar').item(0).setAttribute('style','width:'+Number(pcg)+'%');
 var ans = 0;
 var score = 0;
+var questionNumber = 0; 
 function startQuiz(q){
     quiz.children[1].style.display = "none";
     for(var i = 2 ; i<quiz.childElementCount;i++){
@@ -67,26 +68,35 @@ function startQuiz(q){
     var idx = 0;
     for(var j = 4 ; j<8;j++){
         
-        quiz.children[j].children[1].appendChild(document.createTextNode(Object.values(Object.values(Questions)[0].answers)[idx]))
+        quiz.children[j].children[1].appendChild(document.createTextNode(Object.values(Object.values(Questions)[q].answers)[idx]))
         idx+=1;
     }
-    var questionNumber = Number(q)+1;
+    questionNumber+=1;
     quiz.children[3].appendChild(document.createTextNode("Q"+ questionNumber +" : "+ Object.values(Questions)[q].question))
     quiz.children[8].children[0].appendChild(document.createTextNode("Q: "+questionNumber+" of "+Questions.length))
 
 }
 
 function nextQuestion(){
+    questionNumber+=1;
     pcg+=20;
     document.getElementsByClassName('progress-bar').item(0).setAttribute('aria-valuenow',pcg);
     document.getElementsByClassName('progress-bar').item(0).setAttribute('style','width:'+Number(pcg)+'%');
     var userAnswer = document.querySelector('input[name="userAnswer"]:checked').value
+    
     if(userAnswer == Questions[ans].correctAnswer){
         score+=1;
     }
-    console.log(score)
     ans+=1;
-
+    quiz.children[3].innerHTML = "Q"+ questionNumber +" : "+ Object.values(Questions)[questionNumber-1].question
+    quiz.children[8].children[0].innerText = "Q: "+questionNumber+" of "+Questions.length
+    var idx = 0;
+    for(var j = 4 ; j<8;j++){
+        
+        quiz.children[j].children[1].innerHTML =  Object.values(Object.values(Questions)[questionNumber-1].answers)[idx];
+        idx+=1;
+    }
+    document.querySelector('input[name="userAnswer"]:checked').checked = false;
 
 
 }
