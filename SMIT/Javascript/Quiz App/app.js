@@ -66,6 +66,10 @@ function startQuiz(q){
         quiz.children[j].children[1].appendChild(document.createTextNode(Object.values(Object.values(Questions)[0].answers)[idx]))
         idx+=1;
     }
+    var questionNumber = Number(q)+1;
+    quiz.children[3].appendChild(document.createTextNode("Q"+ questionNumber +" : "+ Object.values(Questions)[q].question))
+    quiz.children[8].children[0].appendChild(document.createTextNode("Q: "+questionNumber+" of "+Questions.length))
+
   
 
 }
