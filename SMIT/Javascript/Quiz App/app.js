@@ -121,3 +121,10 @@ function submit(){
 
     quiz.appendChild(result);
 }
+
+function checkinput(){
+if (('input[name = userAnswer]:checked').length > 0) {
+    quiz.children[9].children[0].disabled = false;
+}
+}
+   

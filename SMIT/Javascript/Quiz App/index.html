@@ -30,18 +30,18 @@
                 
               </div>
               <div class="custom-control custom-radio" style = "display: none;">
-                <input type="radio" id="customRadio1" name="userAnswer" class="custom-control-input" value="a">
+                <input onclick = "checkinput()" type="radio" id="customRadio1" name="userAnswer" class="custom-control-input" value="a">
                 <label class="custom-control-label" for="customRadio1"></label>
               </div>
-              <div class="custom-control custom-radio" style = "display: none;">
+              <div onclick = "checkinput()" class="custom-control custom-radio" style = "display: none;">
                 <input type="radio" id="customRadio2" name="userAnswer" class="custom-control-input" value="b">
                 <label class="custom-control-label" for="customRadio2"></label>
               </div>
               <div class="custom-control custom-radio" style = "display: none;">
-                <input type="radio" id="customRadio3" name="userAnswer" class="custom-control-input" value="c">
+                <input onclick = "checkinput()" type="radio" id="customRadio3" name="userAnswer" class="custom-control-input" value="c">
                 <label class="custom-control-label" for="customRadio3"></label>
               </div>
-              <div class="custom-control custom-radio" style = "display: none;">
+              <div onclick = "checkinput()" class="custom-control custom-radio" style = "display: none;">
                 <input type="radio" id="customRadio4" name="userAnswer" class="custom-control-input" value="d">
                 <label class="custom-control-label" for="customRadio4"></label>
               </div>
@@ -49,7 +49,7 @@
                 <p></p>
               </div>
               <div class = "nextbutton" style = "display: none;">
-              <button type="button" onclick = "nextQuestion()" class="btn-lg btn btn-primary">Next</button>
+              <button type="button" onclick = "nextQuestion()" class="btn-lg btn btn-primary" disabled>Next</button>
             </div>
             <div class = "submitbutton" style = "display: none;">
               <button type="button" onclick = "submit()" class="btn-lg btn btn-primary">Submit</button>
