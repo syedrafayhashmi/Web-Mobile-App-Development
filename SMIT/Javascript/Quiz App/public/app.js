@@ -126,6 +126,8 @@ function submit(){
 function checkinput(){
 if (('input[name = userAnswer]:checked').length > 0) {
     quiz.children[9].children[0].disabled = false;
+    quiz.children[10].children[0].disabled = false;
+
 }
 }
    
