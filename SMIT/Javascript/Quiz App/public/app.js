@@ -100,9 +100,10 @@ function nextQuestion(){
     if(questionNumber == 5){
         quiz.children[9].style.display = "none";
         quiz.children[10].style.display = "";
+        quiz.children[10].children[0].disabled = true;
 
     }
-
+    quiz.children[9].children[0].disabled =true;
 
 }
 function submit(){
