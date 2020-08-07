@@ -26,7 +26,7 @@ footer .icon-logo-white{
 /* Home Evaluation Page*/
 .eval{
 	  position: relative;
-    top: -100px;
+    top: -80px;
 }
 
 .one-half,
@@ -41,8 +41,9 @@ footer .icon-logo-white{
  
 .one-half { width: 48%; }
 .one-third { width: 30.66%; }
-.full-width { width:98%!important;
-
+.full-width { width:100%!important;
+display:block;
+	justify-content:center
 }
 .last {
     margin-right: 0 !important;
@@ -64,4 +65,7 @@ footer .icon-logo-white{
   /*Firefox */
   appearance: auto;
   /* modern browsers */
+}
+.home-eval {
+	 display: inline-block;
 }
