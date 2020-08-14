@@ -19,8 +19,20 @@
         <div class="container">
             <div id = "quiz" class="col">
                 <h1>Quiz</h1>
-                <div style = "padding-top:35%" >
+                <div style = "padding-top:20%" >
+                  <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="validationTooltip01">First name</label>
+                      <input type="text" class="form-control" id="validationTooltip01" value="" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="validationTooltip02">Last name</label>
+                      <input type="text" class="form-control" id="validationTooltip02" value="" required>
+                      
+                    </div>
+                  </div>
                 <button type="button" onclick = "startQuiz(0)" class="btn-lg btn-block btn-primary">Start Quiz</button>
+              
               </div>
               <div class="progress" style = "display: none;">
                 <div class="progress-bar " role="progressbar" aria-valuenow = "0" aria-valuemin="0" aria-valuemax="100"></div>
