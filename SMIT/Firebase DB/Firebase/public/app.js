@@ -28,3 +28,9 @@ function getFirebaseDataRealTime(){
     })
 }
 //getFirebaseDataRealTime()
+
+function removeFirebaseData(){
+    firebase.database().ref('student/-MElX6PhlcA8XY7Aa9ow').remove()  // can also just put student in ref to delete the whole data
+
+}
+removeFirebaseData()
