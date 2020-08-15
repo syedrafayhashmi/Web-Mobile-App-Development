@@ -33,4 +33,13 @@ function removeFirebaseData(){
     firebase.database().ref('student/-MElX6PhlcA8XY7Aa9ow').remove()  // can also just put student in ref to delete the whole data
 
 }
-removeFirebaseData()
+//removeFirebaseData()
+
+function editFirebaseData(){
+    firebase.database().ref('student/-MElWp55BjGYn98io619').set({
+        key: '-MElWp55BjGYn98io619',
+        name : 'rafay',
+        roll:'98'
+    })
+}
+editFirebaseData()
