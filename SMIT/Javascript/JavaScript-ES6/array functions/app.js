@@ -10,6 +10,12 @@ let filter = arr.filter((a)=> console.log(a));
 let name = "rafay";
 let search = "r";
 
-if(name.startsWith(search)){
+if(name.startsWith(search)){  //also endsWith function
     console.log(name);
 }
+
+// Array Map
+
+let arr1 = [2,3,4,5];
+let multiply = arr1.map(a=> a*2);
+console.log(multiply);
