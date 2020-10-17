@@ -15,14 +15,14 @@ let signup = () =>{
 }
 
 let login = () =>{
-    let email = document.getElementById("login-email");
-    let password = document.getElementById("login-password");
-    firebase.auth().signInWithEmailAndPassword(email, password)
-    .then((result)=>{
-        console.log(Logged In);
-        console.log(result)
-    }
-    ).catch(function(error) {
+    let logemail = document.getElementById("login-email");
+    let logpassword = document.getElementById("login-password");
+    firebase.auth().signInWithEmailAndPassword(logemail.value, logpassword.value)
+    .then((result) => {
+        console.log("Logged In");
+        console.log(result);
+    })
+    .catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
