@@ -4,13 +4,16 @@ import './App.css';
 
 
   function App() {
-    let name = "RAFAY"
+    let name = "RAFAY";
+    let fname = "Syed Rafay";
+    let lname = "Hashmi";
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             my name is {name}
+            <h3>{`${fname} ${lname}`}</h3>
           </p>
           <a
             className="App-link"
