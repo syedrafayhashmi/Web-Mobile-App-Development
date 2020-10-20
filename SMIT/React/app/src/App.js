@@ -11,7 +11,7 @@ import './App.css';
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
+          <p className="App-logo">
             my name is {name}
             <h3>{`${fname} ${lname}`}</h3>
           </p>
