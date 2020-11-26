@@ -7,13 +7,15 @@ class App extends Component {
       {name:"Rafay", age : 21},
       {name:"Ali", age : 16},
       {name:"Hashmi", age : 25},
-      
     ]
   }
+switchNameHandler = () =>{
+  
+}
   render() {
     return (
       <div className="App">
-        <button>Switch Name</button>
+        <button onClick = {this.switchNameHandler} >Switch Name</button>
         
         <h1>Hello, from React App</h1>
         <Person name = {this.state.persons[0].name} age = {this.state.persons[0].age}>I am elder</Person>
