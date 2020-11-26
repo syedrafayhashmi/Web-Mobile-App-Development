@@ -2,12 +2,23 @@ import React, { Component } from 'react';
 import './App.css';
 import Person from './Person/Person'
 class App extends Component {
+  state = {
+    persons : [
+      {name:"Rafay", age : 21},
+      {name:"Ali", age : 16},
+      {name:"Hashmi", age : 25},
+      
+    ]
+  }
   render() {
     return (
       <div className="App">
-        <Person name = "Rafay" age = "21">I am elder</Person>
+        <button>Switch Name</button>
+        
         <h1>Hello, from React App</h1>
-        <Person name = "Ali" age = "16">I am younger</Person>
+        <Person name = {this.state.persons[0].name} age = {this.state.persons[0].age}>I am elder</Person>
+        <Person name = {this.state.persons[1].name} age = {this.state.persons[1].age}>I am younger</Person>
+        <Person name = {this.state.persons[2].name} age = {this.state.persons[2].name}>I am eldest</Person>
       </div>
     );
     // return (
