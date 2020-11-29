@@ -1,0 +1,7 @@
+.UserInput{
+    border: 3px double rgb(103, 103, 202);
+    border-radius: 5px;
+    width: 180px;
+    height: 30px;
+    margin:16px
+}

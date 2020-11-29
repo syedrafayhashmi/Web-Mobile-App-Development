@@ -1,5 +1,5 @@
 import React from 'react';
-
-const UserInput = () => <input type = "text"/>
+import './UserInput.css'
+const UserInput = (props) => <input  className = "UserInput" type = "text" onChange = {props.changes} value = {props.username}/>
 
 export default UserInput;

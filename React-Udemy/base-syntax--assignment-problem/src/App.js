@@ -8,6 +8,12 @@ class App extends Component {
   state = {
     userName:'Bravo'
   }
+
+  UserInputChangeHandler = (e) => {
+    this.setState({
+      userName : e.target.value
+    })
+  }
   render() {
     return (
       
@@ -26,10 +32,10 @@ class App extends Component {
           <li>Add styling of your choice to your components/ elements in the components - both with inline styles and stylesheets</li>
         </ol>
 
-        <UserInput/>
-        <UserOutput userName = "Alpha"/>
-        <UserOutput userName = "Alpha"/>
-        <UserOutput userName = "Alpha"/>
+        <UserInput changes = {this.UserInputChangeHandler} username = {this.state.userName}/>
+        <UserOutput userName = {this.state.userName} />
+        <UserOutput userName = {this.state.userName}/>
+        <UserOutput userName = {this.state.userName}/>
       </div>
     );
   }
