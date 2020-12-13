@@ -35,7 +35,7 @@ comtypes==1.1.7
 conda
 conda-build
 contextlib2==0.6.0
-cryptography==2.7
+cryptography==3.2
 cycler==0.10.0
 Cython==0.29.13
 cytoolz==0.10.0
