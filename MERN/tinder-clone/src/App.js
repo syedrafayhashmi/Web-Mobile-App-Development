@@ -1,6 +1,6 @@
 import './App.css';
 import Header from './Header';
-
+import TinderCards from './TinderCards'
 function App() {
   return (
     //Changed App to app ( BEM class naming convention)
@@ -10,7 +10,7 @@ function App() {
       }
 
       {/* Tinder Cards */
-      <Cards/>
+      <TinderCards/>
       }
 
       {/* Swipe buttons */}
