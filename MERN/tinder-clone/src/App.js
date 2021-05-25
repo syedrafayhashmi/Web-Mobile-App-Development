@@ -9,7 +9,9 @@ function App() {
       <Header/>
       }
 
-      {/* Tinder Cards */}
+      {/* Tinder Cards */
+      <Cards/>
+      }
 
       {/* Swipe buttons */}
 

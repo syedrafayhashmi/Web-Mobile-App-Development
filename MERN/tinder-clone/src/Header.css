@@ -1,0 +1,12 @@
+.header{
+display: flex;
+align-items: center; /*before two lines to centre the icon of logo*/
+justify-content: space-between;/*for equal spaces berween all chile elements*/
+z-index: 100;/*to make it appear up all time*/
+border-bottom: 1px solid #f9f9f9;/* for header bottom line*/
+}
+
+.header__logo{
+    object-fit: contain;  /*for the same aspect ratio*/
+    height: 40px;
+}

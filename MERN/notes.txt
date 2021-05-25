@@ -1,0 +1,17 @@
+Tinder Clone
+-------------
+Backend 
+-------
+MongoDB- for database
+Nodejs- A javascript backend framework for running javascipt outside the browser
+Express- for server side JS
+Mongoose - to connect MongoDB
+heroku - for hosting apps
+firebase - frontend hosting
+
+write rfce in js file to bring starter template of react function export component (es7 snippet plugin)
+
+
+Material-UI: A popular React UI framework
+material ui for icons etc
+install material ui and material-ui/icons
