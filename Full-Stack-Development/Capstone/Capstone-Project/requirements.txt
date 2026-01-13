@@ -48,7 +48,7 @@ ecdsa==0.13.3
 entrypoints==0.3
 et-xmlfile==1.0.1
 fastcache==1.1.0
-filelock==3.0.12
+filelock==3.20.3
 Flask==1.0.2
 Flask-Cors==3.0.8
 Flask-Migrate==2.5.2
